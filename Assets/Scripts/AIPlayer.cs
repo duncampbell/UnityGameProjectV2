@@ -21,6 +21,8 @@ public class AIPlayer : MonoBehaviour {
 		StartCoroutine (TrackClosestPlayer ());
 		StartCoroutine (AlternateTargeting ());
 		StartCoroutine (AttackTarget ());
+		StartCoroutine (AdditionalSpells ());
+		StartCoroutine (DropMines ());
 	}
 
 	void Update(){
@@ -135,6 +137,30 @@ public class AIPlayer : MonoBehaviour {
 			oldPlat = mapNavigator.ClosestPlatform(transform.position);
 			yield return new WaitForSeconds (refreshRate);
 		}
+	}
 
+	IEnumerator AdditionalSpells(){
+		float refreshRate = 0.2f;
+		while (!dead) {
+			if (nearestPlayer != null && (transform.position - (nearestPlayer.transform.position + nearestPlayer.velocity * 30)).sqrMagnitude <= 9 && playerController.stamina > playerController.aoeCost) {
+				playerController.AOE ();
+			} else if (playerController.hp < 60 && playerController.stamina > playerController.healCost) {
+				if (Random.Range (10, 100) > playerController.hp) {
+					playerController.Heal ();
+				}
+			}
+			yield return new WaitForSeconds (refreshRate);
+		}
+	}
+
+	IEnumerator DropMines(){
+		float refreshRate = 5f;
+		while (!dead) {
+			refreshRate = Random.Range (5f, 10f);
+			if (Random.Range (0, 100) > 50 && playerController.stamina > playerController.exminecost) {
+				playerController.ExMine ();
+			}
+			yield return new WaitForSeconds (refreshRate);
+		}
 	}
 }

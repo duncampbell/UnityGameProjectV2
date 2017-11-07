@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
 	float friction = .05f;
 	float squaredFrictionThreshold = .01f;
 
-	float hp = 100;
+	public float hp = 100;
 	float maxHp = 100;
 	int lastDamagedBy;
 
