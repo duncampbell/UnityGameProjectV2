@@ -3957,7 +3957,7 @@ Prefab:
         type: 2}
       propertyPath: deathEffect
       value: 
-      objectReference: {fileID: 1954311191157356, guid: 27adcd09e4187584eb80728e49f84a8d,
+      objectReference: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
         type: 2}
     - target: {fileID: 114151113794580968, guid: 33f546bd157b4ad4d9153eeba7bd5d6c,
         type: 2}
@@ -10898,7 +10898,7 @@ Prefab:
         type: 2}
       propertyPath: deathEffect
       value: 
-      objectReference: {fileID: 1954311191157356, guid: 27adcd09e4187584eb80728e49f84a8d,
+      objectReference: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
         type: 2}
     - target: {fileID: 114142365771312744, guid: 65f2c0edc10f97d499c682521c0e52ca,
         type: 2}
@@ -11043,7 +11043,7 @@ Prefab:
         type: 2}
       propertyPath: deathEffect
       value: 
-      objectReference: {fileID: 1954311191157356, guid: 27adcd09e4187584eb80728e49f84a8d,
+      objectReference: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
         type: 2}
     - target: {fileID: 114594093193473546, guid: b7c3b9ebfb525ca4a8d72772e1bd85ed,
         type: 2}
@@ -12548,7 +12548,7 @@ Prefab:
         type: 2}
       propertyPath: deathEffect
       value: 
-      objectReference: {fileID: 1954311191157356, guid: 27adcd09e4187584eb80728e49f84a8d,
+      objectReference: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
         type: 2}
     - target: {fileID: 114567981263228352, guid: f4dbfe0fc5899ff4b8a6738af3d20c9b,
         type: 2}

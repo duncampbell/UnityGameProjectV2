@@ -3,40 +3,53 @@ using System.Collections.Generic;
 using UnityEngine;
 using XboxCtrlrInput;
 
-public class Projectile : MonoBehaviour{
+public class Projectile : MonoBehaviour
+{
 
     public float speed;
-	public float force = 4;
-	public float damage = 5;
-	private int playerNum;
+    public float force = 4;
+    public float damage = 5;
+    private int playerNum;
+    public GameObject explosion;
 
     //Set player number of projectile to stop it from colliding with its own player.
-    public void setPlayerNo(int _playerNum){
-		playerNum = _playerNum;
+    public void setPlayerNo(int _playerNum)
+    {
+        playerNum = _playerNum;
     }
 
     //Set speed projectile is translated.
-    public void setSpeed(float _speed){
+    public void setSpeed(float _speed)
+    {
         speed = _speed;
     }
 
     //Projectile moves forward per frame update at a rate of speed variable.
     //It is then destroyed after certain time.
-    void Update(){
+    void Update()
+    {
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
-        Destroy(this.gameObject, 1.2f);
+        Destroy(gameObject, 0.7f);
     }
 
     //If projectile colides then the other object it forced back with the force specified.
     //Sound is played to indicate this.
     //The object is then destroyed.
-	void OnCollisionEnter(Collision _col){
-		if (_col.gameObject.tag == "Player" && _col.gameObject.GetComponent<PlayerController>().playerNum != playerNum){
-			PlayerController player = _col.gameObject.GetComponent<PlayerController> ();
-			Vector3 dir = new Vector3(player.transform.position.x - transform.position.x, 0, player.transform.position.z - transform.position.z);
+    void OnCollisionEnter(Collision _col)
+    {
+        if (_col.gameObject.tag == "Player" && _col.gameObject.GetComponent<PlayerController>().playerNum != playerNum)
+        {
+            PlayerController player = _col.gameObject.GetComponent<PlayerController>();
+            Vector3 dir = new Vector3(player.transform.position.x - transform.position.x, 0, player.transform.position.z - transform.position.z);
             dir = dir.normalized;
-			player.Damage (damage, playerNum);
-			player.Push (dir * force, playerNum);
+            player.Damage(damage, playerNum);
+            player.Push(dir * force, playerNum);
+            Instantiate(explosion, transform.position, transform.rotation);
+            Destroy(gameObject);
+        }
+        else if (_col.gameObject.tag == "Obstacle" || _col.gameObject.tag == "Fireball")
+        {
+            Instantiate(explosion, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }

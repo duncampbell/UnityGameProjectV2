@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 136262449988655930}
   - component: {fileID: 114962043559162784}
   m_Layer: 0
-  m_Name: Shotgun
+  m_Name: ForcePrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
