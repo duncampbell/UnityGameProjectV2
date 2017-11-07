@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using XboxCtrlrInput;
 
-public class PushSpell : MonoBehaviour
+public class TrapMine : MonoBehaviour
 {
 
     public float speed;
-    public float force = 10;
-    public float damage = 5;
+    public float force = 0;
+    public float damage = 0;
 
     private int playerNo;
 
@@ -31,8 +31,8 @@ public class PushSpell : MonoBehaviour
     //Projectile moves forward per frame update at a rate of speed variable.
     //It is then destroyed after certain time.
     void Update()
-    {        
-        Destroy(this.gameObject, 2);
+    {
+        Destroy(this.gameObject, 8);
     }
 
 
@@ -48,8 +48,8 @@ public class PushSpell : MonoBehaviour
             PlayerController player = _col.gameObject.GetComponent<PlayerController>();
             Vector3 dir = new Vector3(player.transform.position.x - transform.position.x, 0, player.transform.position.z - transform.position.z);
             dir = dir.normalized;
-            player.Push(dir * force, playerNo);
-            Destroy(gameObject,0.5f);
+            player.Freeze(5, playerNo);
+            Destroy(gameObject, 0.5f);
         }
     }
 }

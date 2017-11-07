@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 4314093519076154}
   - component: {fileID: 114002805700026780}
   m_Layer: 0
-  m_Name: HealthEffect
+  m_Name: Heal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -219,7 +219,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39404381b36d9654c93123ac66e710b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healAmt: 0.2
 --- !u!198 &198051308566197070
 ParticleSystem:
   m_ObjectHideFlags: 1

@@ -74,27 +74,29 @@ public class UIController : MonoBehaviour {
     //Pause the game if start button is pressed on controller or if bool is true
     void Update()
     {
-        if (XCI.GetButtonDown(XboxButton.Start, controller))
-        {
-            paused = !paused;
+        
+            if (XCI.GetButtonDown(XboxButton.Start, controller))
+            {
+                paused = !paused;
+                if (paused)
+                {
+                    PausedMenu.SetActive(true);
+                }
+
+            }
             if (paused)
             {
-                PausedMenu.SetActive(true);
+
+                Time.timeScale = 0;
             }
-
-        }
-        if (paused)
-        {
-
-            Time.timeScale = 0;
-        }
-        else
-        {
-            PausedMenu.SetActive(false);
-            ControlMenu.SetActive(false);
-            Time.timeScale = 1;
+            else
+            {
+                PausedMenu.SetActive(false);
+                ControlMenu.SetActive(false);
+                Time.timeScale = 1;
 
             }
+        
     }
 
     //Resume game and start time scale
@@ -113,7 +115,7 @@ public class UIController : MonoBehaviour {
     //Quit and go back to main menu
     public void Quit()
     {
-		GameRoundManager.instance.QuitAndReset ();
+        SceneManager.LoadScene("Menu");
     }
 
     //Unpause game and return.

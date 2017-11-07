@@ -79,7 +79,7 @@ GameObject:
   - component: {fileID: 199047185173935794}
   m_Layer: 0
   m_Name: Fireball2
-  m_TagString: Fireball
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -255,7 +255,6 @@ MonoBehaviour:
   speed: 25
   force: 15
   damage: 5
-  explosion: {fileID: 1624685284856330, guid: 80c5f549873ebf54cab06bbaefa984f2, type: 2}
 --- !u!135 &135034702988850352
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -649,7 +648,7 @@ ParticleSystem:
         m_RotationOrder: 0
       minMaxState: 3
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 20
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -3250,7 +3249,7 @@ ParticleSystem:
         m_RotationOrder: 4
       minMaxState: 0
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 1
     size3D: 0
     rotation3D: 0
     gravityModifier:

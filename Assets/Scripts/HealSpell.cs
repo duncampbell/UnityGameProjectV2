@@ -9,7 +9,10 @@ public class HealSpell : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
+        if (playerNo == 0)
+        {
+
+        }
 	}
 
     public void setPlayerNo(int x)

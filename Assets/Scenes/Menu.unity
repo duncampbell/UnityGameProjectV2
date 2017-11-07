@@ -3575,6 +3575,7 @@ MonoBehaviour:
   player2: {fileID: 1967478778}
   player3: {fileID: 2147428985}
   player4: {fileID: 1215083401}
+  startBtn: {fileID: 1804964273}
 --- !u!4 &846538831 stripped
 Transform:
   m_PrefabParentObject: {fileID: 493472, guid: ca5c291357dc8c54bbb0f485cdccdf17, type: 2}

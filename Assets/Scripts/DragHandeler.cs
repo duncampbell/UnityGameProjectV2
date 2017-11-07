@@ -2,15 +2,21 @@
 using System.Collections;
 using UnityEngine.EventSystems;
 
-public class DragHandeler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class DragHandeler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler
 {
     public static GameObject itemBeingDragged;
     Vector3 startPosition;
     Transform startParent;
 
-    #region IBeginDragHandler implementation
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (eventData.pointerId == -2) {
+            GameObject.Destroy(this.gameObject);
+        }
+    }
+            #region IBeginDragHandler implementation
 
-    public void OnBeginDrag(PointerEventData eventData)
+            public void OnBeginDrag(PointerEventData eventData)
     {
         itemBeingDragged = gameObject;
         startPosition = transform.position;

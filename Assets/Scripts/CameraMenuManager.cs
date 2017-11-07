@@ -36,17 +36,20 @@ public class CameraMenuManager : MonoBehaviour {
     //Load next screen where the game is played
     public void Play()
     {
-        PlayerPrefs.SetString("Player1Name", player1.text);
-        PlayerPrefs.SetString("Player2Name", player2.text);
-        PlayerPrefs.SetString("Player3Name", player3.text);
-        PlayerPrefs.SetString("Player4Name", player4.text);
-        SceneManager.LoadScene("Main");
+        
+            PlayerPrefs.SetString("Player1Name", player1.text);
+            PlayerPrefs.SetString("Player2Name", player2.text);
+            PlayerPrefs.SetString("Player3Name", player3.text);
+            PlayerPrefs.SetString("Player4Name", player4.text);
+            SceneManager.LoadScene("AbilitySelection");
+        
+        
     }
 
     //Exit application
     public void Quit()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
+       UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
 

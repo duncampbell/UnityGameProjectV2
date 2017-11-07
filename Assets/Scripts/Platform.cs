@@ -5,10 +5,10 @@ using UnityEngine;
 public class Platform : MonoBehaviour {
 
 	float timer;
-	bool alternator = true;
+	//bool alternator = true;
 	bool shaking = false;
 	bool outOfPlay = false;
-	Vector3 originalPos;
+	//Vector3 originalPos;
 	
     public float expireTime = 10f;
 	public float expireWarnTime = 0f;
@@ -18,7 +18,7 @@ public class Platform : MonoBehaviour {
 
 	void Start(){
 		timer = 0;
-		originalPos = gameObject.transform.position;
+		//originalPos = gameObject.transform.position;
 		expired = false;
 		pastExpired = false;
 		expiringSoon = false;
