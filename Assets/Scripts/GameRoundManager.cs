@@ -50,6 +50,7 @@ public class GameRoundManager : MonoBehaviour {
 
 	void Start(){
 		if (roundsPlayed == 0) {
+			numDeadPlayers = 0;
 			ResetStats ();
 		}
 	}
@@ -59,6 +60,29 @@ public class GameRoundManager : MonoBehaviour {
 		scoreScreen.gameObject.SetActive(Input.GetKey (KeyCode.Tab) || betweenRounds);
 		if (betweenRounds) {
 			RoundCountdown ();
+		}
+		CheckDebugInput ();
+	}
+
+	void CheckDebugInput(){
+		if (Input.GetKeyDown (KeyCode.F1)){
+			if (players.Length >= 1 && players [0] != null)
+				players [0].Damage (100);
+		}
+		if (Input.GetKeyDown (KeyCode.F2)){
+			if (players.Length >= 2 && players [1] != null)
+				players [1].Damage (100);
+		}
+		if (Input.GetKeyDown (KeyCode.F3)){
+			if (players.Length >= 3 && players [2] != null)
+				players [2].Damage (100);
+		}
+		if (Input.GetKeyDown (KeyCode.F4)){
+			if (players.Length >= 4 && players [3] != null)
+				players [3].Damage (100);
+		}
+		if (betweenRounds && Input.GetKeyDown (KeyCode.Space)) {
+			roundCountdown = 10;
 		}
 	}
 
@@ -88,13 +112,13 @@ public class GameRoundManager : MonoBehaviour {
 	}
 
 	void ResetPlayers(){
-		numDeadPlayers = 0;
 		players = new PlayerController[numPlayers];
 	}
 
 	void StartNewRound(){
 		ResetPlayers ();
-		SceneManager.LoadScene ("Main");
+		//SceneManager.LoadScene ("Main");
+		LoadRandomLevel();
 	}
 
 	public void AddPlayer(PlayerController pc){
@@ -117,6 +141,7 @@ public class GameRoundManager : MonoBehaviour {
 
 	void CheckRoundOver(int killerPlayerNum){
 		if (numDeadPlayers >= numPlayers - 1) {
+			numDeadPlayers = 0;
 			playerStats [killerPlayerNum - 1].score += scorePerWin;
 			Invoke ("EndRound", 3);
 		}
@@ -126,11 +151,20 @@ public class GameRoundManager : MonoBehaviour {
 		betweenRounds = true;
 		roundCountdown = 0;
 		roundsPlayed += 1;
+		numDeadPlayers = 0;
 		SceneManager.LoadScene ("ScoreScreen");
 	}
 
 	public void AddScore(int playerNum, float score){
 		playerStats [playerNum - 1].score += score * scorePerDmg;
+	}
+
+	public void QuitAndReset(){
+		ResetStats ();
+		ResetPlayers ();
+		roundsPlayed = 0;
+		numDeadPlayers = 0;
+		SceneManager.LoadScene("Menu");
 	}
 
 	void UpdateScoreScreen(){
@@ -156,5 +190,19 @@ public class GameRoundManager : MonoBehaviour {
 			roundCountdownText.GetComponent<Text> ().text = "";
 		}
 	}
-		
+
+	void LoadRandomLevel(){
+		int r = Random.Range(0, 3);
+		switch (r) {
+		case 0:
+			SceneManager.LoadScene ("Main2Pillars");
+			break;
+		case 1:
+			SceneManager.LoadScene ("Main3Pillars");
+			break;
+		case 2:
+			SceneManager.LoadScene ("MainRing");
+			break;
+		}
+	}
 }
