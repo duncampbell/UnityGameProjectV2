@@ -21,8 +21,6 @@ GameObject:
   - component: {fileID: 4955325507025526}
   - component: {fileID: 198055331056268848}
   - component: {fileID: 199668852901805054}
-  - component: {fileID: 136332356182938898}
-  - component: {fileID: 54267424500216736}
   m_Layer: 0
   m_Name: Flames
   m_TagString: Untagged
@@ -54,6 +52,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4155052282122746}
   - component: {fileID: 114029098614342432}
+  - component: {fileID: 54202225130361300}
+  - component: {fileID: 136976972947490844}
   m_Layer: 0
   m_Name: Flames
   m_TagString: Flames
@@ -607,12 +607,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1135415457881340}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &54267424500216736
+--- !u!54 &54202225130361300
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1082946945020870}
+  m_GameObject: {fileID: 1099053987803468}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -635,20 +635,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   force: 0
-  damage: 0.5
---- !u!136 &136332356182938898
+  damage: 0.3
+--- !u!136 &136976972947490844
 CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1082946945020870}
+  m_GameObject: {fileID: 1099053987803468}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.2
-  m_Height: 15
+  m_Radius: 1
+  m_Height: 12
   m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 6.5}
+  m_Center: {x: 0, y: 0, z: 5.5}
 --- !u!198 &198019710122276822
 ParticleSystem:
   m_ObjectHideFlags: 1

@@ -46,11 +46,10 @@ public class FireStream : MonoBehaviour
     //If projectile colides then the other object it forced back with the force specified.
     //Sound is played to indicate this.
     //The object is then destroyed.
-    void OnCollisionEnter(Collision _col)
+    void OnCollisionStay(Collision _col)
     {
         if (_col.gameObject.tag == "Player" && _col.gameObject.GetComponent<PlayerController>().playerNum != playerNum)
         {
-            print("OLA");
             PlayerController player = _col.gameObject.GetComponent<PlayerController>();
             player.Damage(damage, playerNum);
         }
