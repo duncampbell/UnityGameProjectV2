@@ -1,0 +1,116 @@
+Initialize engine version: 5.5.2f1 (3829d7f588f3)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 950M (ID=0x139a)
+    Vendor:   NVIDIA
+    VRAM:     2019 MB
+    Driver:   22.21.13.8205
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Duncan\Documents\GitHub\UnityGameProjectV2\Game_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Duncan\Documents\GitHub\UnityGameProjectV2\Game_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Duncan\Documents\GitHub\UnityGameProjectV2\Game_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Duncan\Documents\GitHub\UnityGameProjectV2\Game_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Duncan\Documents\GitHub\UnityGameProjectV2\Game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Duncan\Documents\GitHub\UnityGameProjectV2\Game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Duncan\Documents\GitHub\UnityGameProjectV2\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Duncan\Documents\GitHub\UnityGameProjectV2\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Duncan\Documents\GitHub\UnityGameProjectV2\Game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Duncan\Documents\GitHub\UnityGameProjectV2\Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Duncan\Documents\GitHub\UnityGameProjectV2\Game_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\Duncan\Documents\GitHub\UnityGameProjectV2\Game_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: C:\Users\Duncan\Documents\GitHub\UnityGameProjectV2\Game_Data\Managed\XInputDotNetPure.dll (this message is harmless)
+Loading C:\Users\Duncan\Documents\GitHub\UnityGameProjectV2\Game_Data\Managed\XInputDotNetPure.dll into Unity Child Domain
+- Completed reload, in  0.023 seconds
+Platform assembly: C:\Users\Duncan\Documents\GitHub\UnityGameProjectV2\Game_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Duncan\Documents\GitHub\UnityGameProjectV2\Game_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 2400x1350 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.866096 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 3ec0 -> priority: 1 
+  Thread -> id: 2490 -> priority: 1 
+Joystick disconnected ("Controller (XUSB Gamepad)").
+ 
+(Filename:  Line: 1258)
+
+Joystick reconnected ("Controller (XUSB Gamepad)").
+ 
+(Filename:  Line: 1323)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.504500 ms
+
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 1834.
+Total: 0.664797 ms (FindLiveObjects: 0.092626 ms CreateObjectMapping: 0.019692 ms MarkObjects: 0.390564 ms  DeleteObjects: 0.161549 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.443737 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2319.
+Total: 0.932831 ms (FindLiveObjects: 0.123988 ms CreateObjectMapping: 0.026985 ms MarkObjects: 0.686677 ms  DeleteObjects: 0.094814 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.500261 ms
+
+Unloading 59 unused Assets to reduce memory usage. Loaded Objects now: 1175.
+Total: 0.706005 ms (FindLiveObjects: 0.082415 ms CreateObjectMapping: 0.017139 ms MarkObjects: 0.535703 ms  DeleteObjects: 0.070381 ms)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.341333 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2399.
+Total: 0.807749 ms (FindLiveObjects: 0.109401 ms CreateObjectMapping: 0.024068 ms MarkObjects: 0.667714 ms  DeleteObjects: 0.005834 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at AIPlayer.SqrDistToNearestSafePlatform () [0x00000] in <filename unknown>:0 
+  at AIPlayer+<MoveToSafePlatform>c__Iterator3.MoveNext () [0x00000] in <filename unknown>:0 
+  at UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at AIPlayer.SqrDistToNearestSafePlatform () [0x00000] in <filename unknown>:0 
+  at AIPlayer+<MoveToSafePlatform>c__Iterator3.MoveNext () [0x00000] in <filename unknown>:0 
+  at UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.686677 ms
+
+Unloading 331 unused Assets to reduce memory usage. Loaded Objects now: 903.
+Total: 0.708193 ms (FindLiveObjects: 0.063088 ms CreateObjectMapping: 0.028809 ms MarkObjects: 0.227920 ms  DeleteObjects: 0.387281 ms)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.264022 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2369.
+Total: 0.830358 ms (FindLiveObjects: 0.098096 ms CreateObjectMapping: 0.024068 ms MarkObjects: 0.702358 ms  DeleteObjects: 0.005470 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.452489 ms
+
+Unloading 52 unused Assets to reduce memory usage. Loaded Objects now: 1457.
+Total: 0.805925 ms (FindLiveObjects: 0.050324 ms CreateObjectMapping: 0.052148 ms MarkObjects: 0.615931 ms  DeleteObjects: 0.087156 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.926632 ms
+
+Unloading 295 unused Assets to reduce memory usage. Loaded Objects now: 1876.
+Total: 1.187373 ms (FindLiveObjects: 0.115236 ms CreateObjectMapping: 0.024068 ms MarkObjects: 0.530962 ms  DeleteObjects: 0.516740 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.658164 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2359.
+Total: 1.015247 ms (FindLiveObjects: 0.121435 ms CreateObjectMapping: 0.026985 ms MarkObjects: 0.722051 ms  DeleteObjects: 0.144045 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.499532 ms
+
+Unloading 52 unused Assets to reduce memory usage. Loaded Objects now: 1457.
+Total: 0.745390 ms (FindLiveObjects: 0.062723 ms CreateObjectMapping: 0.033914 ms MarkObjects: 0.583840 ms  DeleteObjects: 0.064546 ms)
+

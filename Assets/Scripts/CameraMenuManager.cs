@@ -49,7 +49,7 @@ public class CameraMenuManager : MonoBehaviour {
     //Exit application
     public void Quit()
     {
-       UnityEditor.EditorApplication.isPlaying = false;
+       //UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
 
