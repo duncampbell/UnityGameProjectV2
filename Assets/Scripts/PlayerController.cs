@@ -174,7 +174,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            stamRechargeTimer = 0;
+            //stamRechargeTimer = 0;
             return;
         }
 	}
@@ -281,7 +281,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            stamRechargeTimer = 0;
+            //stamRechargeTimer = 0;
             return;
         }
     }
@@ -312,7 +312,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            stamRechargeTimer = 0;
+            //stamRechargeTimer = 0;
             return;
         }
     }
@@ -410,7 +410,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            stamRechargeTimer = 0;
+            //stamRechargeTimer = 0;
             return;
         }
     }
@@ -433,7 +433,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            stamRechargeTimer = 0;
+            //stamRechargeTimer = 0;
             return;
         }
     }

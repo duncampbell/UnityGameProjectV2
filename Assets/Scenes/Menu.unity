@@ -13481,7 +13481,7 @@ Prefab:
         type: 2}
       propertyPath: soundGroups.Array.data[5].group.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 26259f7387affcd4a990dfa89a456035, type: 3}
+      objectReference: {fileID: 8300000, guid: f9953d8ebb5888b46be727498a14bf70, type: 3}
     - target: {fileID: 114360898358173074, guid: 4e4c51453bb4eb2449af81a586a6aae9,
         type: 2}
       propertyPath: soundGroups.Array.data[6].groupID
@@ -13491,7 +13491,7 @@ Prefab:
         type: 2}
       propertyPath: soundGroups.Array.data[6].group.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 68c2b09306a9afe48b68f53f8b27c511, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 114360898358173074, guid: 4e4c51453bb4eb2449af81a586a6aae9,
         type: 2}
       propertyPath: soundGroups.Array.data[7].groupID
@@ -13501,7 +13501,7 @@ Prefab:
         type: 2}
       propertyPath: soundGroups.Array.data[7].group.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 8daa588cf7f43054d8db0b1ca9859d0f, type: 3}
+      objectReference: {fileID: 8300000, guid: b426da28027ff2e49bc2776c9b27de7b, type: 3}
     - target: {fileID: 114360898358173074, guid: 4e4c51453bb4eb2449af81a586a6aae9,
         type: 2}
       propertyPath: soundGroups.Array.data[8].groupID
@@ -13511,7 +13511,7 @@ Prefab:
         type: 2}
       propertyPath: soundGroups.Array.data[8].group.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 661471e4403c3bf4599c2aae40eea898, type: 3}
+      objectReference: {fileID: 8300000, guid: acfb3e0529f5269479c11e31b896fd8f, type: 3}
     - target: {fileID: 114360898358173074, guid: 4e4c51453bb4eb2449af81a586a6aae9,
         type: 2}
       propertyPath: soundGroups.Array.data[9].groupID
@@ -13521,7 +13521,7 @@ Prefab:
         type: 2}
       propertyPath: soundGroups.Array.data[9].group.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 2801e3ff876e4ee40a04f9644b70b85a, type: 3}
+      objectReference: {fileID: 8300000, guid: 4d7adccf2eb855e4c8d0bbd282b8d602, type: 3}
     - target: {fileID: 114360898358173074, guid: 4e4c51453bb4eb2449af81a586a6aae9,
         type: 2}
       propertyPath: soundGroups.Array.data[10].groupID
@@ -13531,7 +13531,7 @@ Prefab:
         type: 2}
       propertyPath: soundGroups.Array.data[10].group.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: cf561d0c9568d494b9223615f747701e, type: 3}
+      objectReference: {fileID: 8300000, guid: 924b9f7dc55157f49a26265945316ac1, type: 3}
     - target: {fileID: 114360898358173074, guid: 4e4c51453bb4eb2449af81a586a6aae9,
         type: 2}
       propertyPath: soundGroups.Array.data[11].groupID
@@ -13541,7 +13541,7 @@ Prefab:
         type: 2}
       propertyPath: soundGroups.Array.data[11].group.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 5ea1da441dd1e5e43b6c6e272aff4323, type: 3}
+      objectReference: {fileID: 8300000, guid: 5979176c0c0de40479260779774e9387, type: 3}
     - target: {fileID: 114360898358173074, guid: 4e4c51453bb4eb2449af81a586a6aae9,
         type: 2}
       propertyPath: soundGroups.Array.data[12].groupID
@@ -13551,7 +13551,7 @@ Prefab:
         type: 2}
       propertyPath: soundGroups.Array.data[12].group.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: ca4944e480a2e344db0d9e7f109c1694, type: 3}
+      objectReference: {fileID: 8300000, guid: 8c0e687a8fb0ec1458faa73e4b49145a, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e4c51453bb4eb2449af81a586a6aae9, type: 2}
   m_IsPrefabParent: 0

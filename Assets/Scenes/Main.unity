@@ -7981,7 +7981,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4082114015250216, guid: 33f546bd157b4ad4d9153eeba7bd5d6c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -14.17
+      value: -5.6
       objectReference: {fileID: 0}
     - target: {fileID: 4082114015250216, guid: 33f546bd157b4ad4d9153eeba7bd5d6c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -7989,7 +7989,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4082114015250216, guid: 33f546bd157b4ad4d9153eeba7bd5d6c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 9.22
+      value: 2.4
       objectReference: {fileID: 0}
     - target: {fileID: 4082114015250216, guid: 33f546bd157b4ad4d9153eeba7bd5d6c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -8123,6 +8123,11 @@ Prefab:
         type: 2}
       propertyPath: m_Color.r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54673159301182418, guid: 33f546bd157b4ad4d9153eeba7bd5d6c,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 33f546bd157b4ad4d9153eeba7bd5d6c, type: 2}
@@ -9512,7 +9517,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 757099412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.09, y: 1.7, z: 11.17}
+  m_LocalPosition: {x: 11.76, y: 1.7, z: 4.3}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 915190816}
@@ -9575,7 +9580,7 @@ Rigidbody:
   m_Drag: 2
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
@@ -20598,7 +20603,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4038751894106714, guid: 65f2c0edc10f97d499c682521c0e52ca, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -11.7
+      value: -3.2
       objectReference: {fileID: 0}
     - target: {fileID: 4038751894106714, guid: 65f2c0edc10f97d499c682521c0e52ca, type: 2}
       propertyPath: m_LocalPosition.y
@@ -20606,7 +20611,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4038751894106714, guid: 65f2c0edc10f97d499c682521c0e52ca, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -14.68
+      value: -10.7
       objectReference: {fileID: 0}
     - target: {fileID: 4038751894106714, guid: 65f2c0edc10f97d499c682521c0e52ca, type: 2}
       propertyPath: m_LocalRotation.x
@@ -20741,6 +20746,11 @@ Prefab:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 54654496580925228, guid: 65f2c0edc10f97d499c682521c0e52ca,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 65f2c0edc10f97d499c682521c0e52ca, type: 2}
   m_IsPrefabParent: 0
@@ -20789,7 +20799,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4780294383297062, guid: b7c3b9ebfb525ca4a8d72772e1bd85ed, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 13.09
+      value: 9.76
       objectReference: {fileID: 0}
     - target: {fileID: 4780294383297062, guid: b7c3b9ebfb525ca4a8d72772e1bd85ed, type: 2}
       propertyPath: m_LocalPosition.y
@@ -20797,7 +20807,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4780294383297062, guid: b7c3b9ebfb525ca4a8d72772e1bd85ed, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -12.54
+      value: -8.6
       objectReference: {fileID: 0}
     - target: {fileID: 4780294383297062, guid: b7c3b9ebfb525ca4a8d72772e1bd85ed, type: 2}
       propertyPath: m_LocalRotation.x
@@ -20930,6 +20940,11 @@ Prefab:
     - target: {fileID: 114143188025951854, guid: b7c3b9ebfb525ca4a8d72772e1bd85ed,
         type: 2}
       propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54701918450320782, guid: b7c3b9ebfb525ca4a8d72772e1bd85ed,
+        type: 2}
+      propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
