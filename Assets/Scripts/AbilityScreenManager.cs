@@ -31,9 +31,56 @@ public class AbilityScreenManager : MonoBehaviour
     public GameObject Player4Slot2;
     public GameObject Player4Slot3;
 
+    public Text player1Name;
+    public Text player2Name;
+    public Text player3Name;
+    public Text player4Name;
+
 
     void Start()
     {
+        string name = PlayerPrefs.GetString("Player1Name").ToUpper();
+        if (name == "")
+        {
+            player1Name.text = "PLAYER 1";
+        }
+        else
+        {
+            player1Name.text = name;
+        }
+
+        name = PlayerPrefs.GetString("Player2Name").ToUpper();
+        if (name == "")
+        {
+            player2Name.text = "PLAYER 2";
+        }
+        else
+        {
+            player2Name.text = name;
+        }
+
+        name = PlayerPrefs.GetString("Player3Name").ToUpper();
+        if (name == "")
+        {
+            player3Name.text = "PLAYER 3";
+        }
+        else
+        {
+            player3Name.text = name;
+        }
+
+        name = PlayerPrefs.GetString("Player4Name").ToUpper();
+        if (name == "")
+        {
+            player4Name.text = "PLAYER 4";
+        }
+        else
+        {
+            player4Name.text = name;
+        }
+
+
+
         int controlNum = XCI.GetNumPluggedCtrlrs();
         if (controlNum > 1)
         {
@@ -129,6 +176,11 @@ public class AbilityScreenManager : MonoBehaviour
            
     }
         
+    }
+
+    public void Back()
+    {
+        SceneManager.LoadScene("Menu");
     }
 
     string[] getAbilities(Transform transform)

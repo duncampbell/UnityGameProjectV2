@@ -19,6 +19,10 @@ public class CameraMenuManager : MonoBehaviour {
         volumeSliders[0].value = AudioManager.instance.masterVolumePercent;
         volumeSliders[1].value = AudioManager.instance.musicVolumePercent;
         volumeSliders[2].value = AudioManager.instance.sfxVolumePercent;
+        player1.characterLimit = 10;
+        player2.characterLimit = 10;
+        player3.characterLimit = 10;
+        player4.characterLimit = 10;
     }
 	
 	//Transform position and rotation of camera to current menu at each update
